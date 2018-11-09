@@ -549,16 +549,9 @@ function mc_helper_logic() {
 } //Main Function ends
 
 
-/*
-============================
-============================
-=====WINDOW CONTROLLERS=====
-============================
-============================
-*/
-/*
-Appends aYbe window to the first div in DOM.
-*/
+/* WINDOW CONTROLLERS /
+/* Appends aYbe window to the first div in DOM.*/
+
 function createWindow() {
     const first_div = document.getElementsByTagName("body")[0];
     const create_div = document.createElement("div");
@@ -593,10 +586,9 @@ function aybe() {
 Displays options from aybe() function according domain name
 */
 function optionController() {
-    /*
---> ALL FREAKING OPTIONS <---
 
-  */
+    /* ALL FREAKING OPTIONS */
+
     const domain_path = window.location.href;
     /*IF EMARSYS*/
     if (domain_path.match(/broadcast/g)) {
@@ -727,7 +719,7 @@ function loadStyles() {
     const alertBox = "#alertBox{position:absolute;top:0;right:10px;width:20px;line-height:20px;vertical-align:middle;background:#03a9f4;text-align:center;border-radius:50%;color:#ffffff;font-weight:bold;cursor:pointer;}"
     const modalAlertBox = "#modalWindowForAlert{color:#ffffffc9;background: #1577e7a3;position:fixed;left:30%;top:50%;width:500px;word-wrap:break-word;padding:14px;border: 1px solid;box-shadow: inset 0px 0px 2px 3px;}#modalWindowForAlert ul>li{list-style-type:none !important;}#modalWindowForAlert ul{padding:0px;margin:0px;}#closeModalWindowForAlert{position:absolute;right:7px;top:0px;padding:0px;margin:0px;color:red;font-weight:bold;font-size:20px;cursor:pointer;}";
     const buttonForMC = "#copy_button{display:block;margin: 0 auto;margin-top: 5px;background: white;padding: 4px;border-radius: 6px;color: #545454 !important;font-weight: bold; border: 2px solid #0bb1f1;}"
-    style_app.innerHTML = buttonForMC + modalAlertBox + alertBox + appearBox + log_messages + custom_aybe_scrollbar + wiki_styles + jump_window + sparc_number + ul_li + dialog_window + open_close + select_styles + ".ahojky{box-sizing: content-box;overflow-y: scroll;overflow-x: hidden;max-height:350px;box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.5);border-radius:6px;padding:20px;position:fixed;top:0px;right:0px;width:200px;height:auto;border:3px solid rgba(255,255,255,0.1);background-color:rgba(255,255,255,0.4);z-index:9999}.ahojky:hover{background-color:rgba(255,255,255,0.8);}" + option_styles;
+    style_app.innerHTML = buttonForMC + modalAlertBox + alertBox + appearBox + log_messages + custom_aybe_scrollbar + wiki_styles + jump_window + sparc_number + ul_li + dialog_window + open_close + select_styles + ".ahojky{box-sizing: content-box;overflow-y: scroll;overflow-x: hidden;max-height:350px;box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.5);padding:20px;position:fixed;top:0px;right:0px;width:300px;height:auto;border:3px solid #f4f4f4);background-color:rgba(255,255,255,0.4);z-index:9999}.ahojky:hover{background-color:rgba(255,255,255,0.8);}" + option_styles;
 
     if (typeof first_div === "undefined") {
         first_div = document.getElementsByTagName("body")[0];
