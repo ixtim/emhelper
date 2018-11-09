@@ -570,7 +570,7 @@ function createWindow() {
 /*Setting up the aYbe*/
 function aybe() {
 
-    const option_do_noting = "<option value='do_nothing'>--</option>";
+    const option_do_noting = "<option value='do_nothing'>Select a Value</option>";
     const option_review_ticket = "<option value='review_ticket' id='review_ticket_data'>Review Ticket</option>";
     const option_get_sparc_data = "<option value='get_localstorage_data' id='download_ticket_data'>Download Ticket Data</option>";
     const option_delete_sparc_data = "<option value='delete_sparc_data'>DELETE This Data</option>";
@@ -665,7 +665,7 @@ function aybeSwitcher() {
     select_window.style.right = -215 + "px"
     const toggle_div = document.createElement("div");
     toggle_div.setAttribute("id", "jump_window");
-    toggle_div.innerHTML = "&Lang;";
+    toggle_div.innerHTML = "&Lang; sola";
     select_window.appendChild(toggle_div);
     toggle_div.addEventListener("click", window_switcher);
     let counter = 0;
@@ -673,7 +673,7 @@ function aybeSwitcher() {
     function window_switcher() {
         counter += 1;
         if (counter === 1) {
-            toggle_div.innerHTML = "&Rang;";
+            toggle_div.innerHTML = "&Rang; sag";
             select_window.style.right = 0 + "px";
             select_window.style.background = "white";
         } else if (counter === 2) {
@@ -816,20 +816,9 @@ function closeModalWindowForAlert() {
 }
 
 
-/*||||||||||||||||||||||||||||*/
-/*||||||||||||||||||||||||||||*/
-/*-----INVASIVE FUNCTIONS*-----/
-/*||||||||||||||||||||||||||||*/
-/*||||||||||||||||||||||||||||*/
+
 /*
 Follwing functions are not triggered by selecting specific option item.
 These functions will check URL, and if URL passes specific condition,
 function will be immediately called right after document load itself.
-*/
-/*
-============================
-============================
-====MC SETUP Protection=====
-============================
-============================
 */
