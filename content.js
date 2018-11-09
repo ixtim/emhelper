@@ -18,7 +18,7 @@ function gotMessage(message, sender, sendResponse) {
         head.appendChild(script);
 
     }
-    loadScript("https://min.gitcdn.link/repo/roottr/norm/Master/app.js?version=" + random_version, "callback");
+    loadScript("https://min.gitcdn.link/repo/roottr/emhelper/master/app.js?version=" + random_version, "callback");
 
 
 }
